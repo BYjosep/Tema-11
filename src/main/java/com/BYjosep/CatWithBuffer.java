@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Cat {
+public class CatWithBuffer {
     public static void main(String[] args) {
         if(args.length != 1) {
             throw new RuntimeException("Debe indicar la ruta del archivo");
