@@ -1,4 +1,4 @@
-package com.BYjosep;
+package com.BYjosep.ejemplos;
 
 import java.io.File;
 import java.io.FileNotFoundException;

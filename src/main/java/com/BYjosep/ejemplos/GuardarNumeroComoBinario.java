@@ -1,4 +1,6 @@
-package com.BYjosep;
+package com.BYjosep.ejemplos;
+
+import com.BYjosep.Config;
 
 import java.io.*;
 
