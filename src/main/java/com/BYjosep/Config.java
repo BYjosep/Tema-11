@@ -3,7 +3,7 @@ package com.BYjosep;
 import java.io.File;
 
 public class Config {
-    public static final String FILE_PATH= "/home/arch/Public/ficheros/";
+    public static final String FILE_PATH= "/home/"+System.getProperty("user.name")+"/Public/ficheros/";
 
     public static boolean comprobarArchivo(File file){
         if (!file.exists()) {

@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Cat {
-    public static void main(String[] args) {
+    public static char[] main(String[] args) {
         if(args.length != 1) {
             throw new RuntimeException("Debe indicar la ruta del archivo");
         }
@@ -14,10 +14,10 @@ public class Cat {
         String rutaArchivo = args[0];
 
         File file = new File(rutaArchivo);
+        char[] txt = new char[1024];
 
         try (FileReader fr = new FileReader(file)){
             int caracter;
-            char[] txt = new char[1024];
             int cantidad;
             while (( cantidad = fr.read(txt))>=0 ) {
                 for(int i = 0; i<cantidad; i++) {
@@ -33,5 +33,6 @@ public class Cat {
             System.exit(-1);
         }
 
+        return txt;
     }
 }
