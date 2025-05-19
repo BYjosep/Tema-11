@@ -55,7 +55,7 @@ public class Ejercicio12 {
              FileWriter fw = new FileWriter(LOG, true)) {
 
             for(String line; (line =fr.readLine())!=null; ){
-                if (line.length() <= 8) {
+                if (line.length() < 8) {
                     sb.append(String.format("%08d\n", Integer.parseInt(line)));
 
                 }
