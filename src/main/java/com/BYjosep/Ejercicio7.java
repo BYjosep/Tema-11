@@ -1,10 +1,8 @@
 package com.BYjosep;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
-public class ejercicio7 {
+public class Ejercicio7 {
     private static final String FILE = Config.FILE_PATH + "ejercicio7";
 
     public static void main(String[] args) throws FileNotFoundException {

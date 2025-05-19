@@ -1,5 +1,6 @@
 package com.BYjosep;
 
+import com.BYjosep.Exeptions.FileFoundExeption;
 import com.BYjosep.ejemplos.Cat;
 
 import java.io.*;
@@ -10,8 +11,13 @@ public class Ejercicio10 {
 
         String FILE = Config.FILE_PATH;
         Scanner sc = new Scanner(System.in);
-        if(args.length != 2) {
-            throw new RuntimeException("Debe indicar la ruta del archivo");
+        try {
+            Config.comprobarArg(args, 2,true);
+        } catch (FileNotFoundException e) {
+            System.exit(-1);
+        } catch (FileFoundExeption e) {
+            System.exit(-2);
+
         }
 
         System.out.println("Ingrese el archivo que desea salir");
