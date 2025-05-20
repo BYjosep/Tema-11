@@ -39,9 +39,9 @@ public class TextoAMorse {
                 bw.newLine();
             }
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.exit(-1);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            System.exit(-2);
         }
     }
 
